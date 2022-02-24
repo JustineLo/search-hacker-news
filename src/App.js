@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import SearchForm from './SearchForm'
+import Stories from './Stories'
+import Buttons from './Buttons'
+import Fade from 'react-reveal/Fade';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <SearchForm />
+      <Buttons />
+      <Stories />
+      <footer>
+        <Fade top delay={500}>
+          <h4>© 2022 - Crée avec ❤ par <a href="https://justinelo-portfolio.netlify.app">Justine Lo</a></h4>
+        </Fade>
+      </footer>
+    </>
+  )
 }
 
-export default App;
+export default App
